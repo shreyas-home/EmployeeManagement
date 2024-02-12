@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="department.png" />
+    <None Remove="employee.png" />
+    <None Remove="exit.png" />
+    <None Remove="logo1.png" />
+    <None Remove="logout.png" />
+    <None Remove="permission.png" />
+    <None Remove="position.png" />
+    <None Remove="salary.png" />
+    <None Remove="task.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DB\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="department.png" />
+    <Resource Include="employee.png" />
+    <Resource Include="exit.png" />
+    <Resource Include="logo1.png" />
+    <Resource Include="logout.png" />
+    <Resource Include="permission.png" />
+    <Resource Include="position.png" />
+    <Resource Include="salary.png" />
+    <Resource Include="task.png" />
+  </ItemGroup>
+
+</Project>
